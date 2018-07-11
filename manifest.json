@@ -1,0 +1,21 @@
+{
+	"update_url": "https://clients2.google.com/service/update2/crx",
+	"manifest_version": 2,
+    "name": "UTD-InstructorRatings",
+    "description": "UTD instructor ratings for coursebook",
+    "version": "1.3.5",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "jquery.js", "content1.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+	"permissions": [
+		"https://afternoon-headland-40472.herokuapp.com/getData"
+	]
+}
